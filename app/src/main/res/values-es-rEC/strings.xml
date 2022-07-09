@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Shop App</string>
+    <string name="welcome_txt">Bienvenido de Vuelta</string>
+    <string name="signUp_btn">Registrarse</string>
+    <string name="login_btn">Ingresar</string>
+    <string name="password_login_hint">Ingresa tu contraseña....</string>
+    <string name="email_login_hint">Ingresa tu Email...</string>
+    <string name="user_login_hint">Ingresa tu Usuario....</string>
+    <string name="user_login_txt">Usuario</string>
+    <string name="email_login_txt">Email</string>
+    <string name="password_login_txt">Contraseña</string>
+    <string name="password_recover_txt">Ollvidaste tu contraseña? Recuperala</string>
+</resources>

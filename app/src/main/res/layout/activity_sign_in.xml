@@ -25,7 +25,7 @@
                 android:layout_height="401dp">
 
                 <ImageView
-                    android:id="@+id/imageView"
+                    android:id="@+id/imageViewTop"
                     android:layout_width="406dp"
                     android:layout_height="381dp"
                     android:scaleType="fitXY"
@@ -38,10 +38,10 @@
                     app:srcCompat="@drawable/top_background" />
 
                 <ImageView
-                    android:id="@+id/imageView2"
+                    android:id="@+id/imageViewLogo"
                     android:layout_width="409dp"
                     android:layout_height="332dp"
-                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageViewTop"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
@@ -62,12 +62,12 @@
                     android:layout_marginStart="32dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="32dp"
-                    android:text="Email"
+                    android:text="@string/email_login_txt"
                     android:textColor="#ffffff"
                     android:textSize="21sp" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName3"
+                    android:id="@+id/editTextEmail"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginStart="32dp"
@@ -75,7 +75,7 @@
                     android:layout_marginEnd="32dp"
                     android:background="@drawable/edittext_background"
                     android:ems="10"
-                    android:hint="Enter your Email..."
+                    android:hint="@string/email_login_hint"
                     android:inputType="textPersonName"
                     android:paddingStart="24dp"
                     android:textColorHint="#8A8888"
@@ -88,12 +88,12 @@
                     android:layout_marginStart="32dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="32dp"
-                    android:text="Password"
+                    android:text="@string/password_login_txt"
                     android:textColor="#ffffff"
                     android:textSize="21sp" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName2"
+                    android:id="@+id/editTextPassword"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginStart="32dp"
@@ -101,8 +101,8 @@
                     android:layout_marginEnd="32dp"
                     android:background="@drawable/edittext_background"
                     android:ems="10"
-                    android:hint="Enter your Password..."
-                    android:inputType="textPersonName"
+                    android:hint="@string/password_login_hint"
+                    android:inputType="textPassword"
                     android:paddingStart="24dp"
                     android:textColorHint="#8A8888"
                     android:textSize="19sp" />
@@ -114,13 +114,13 @@
                     android:layout_marginStart="32dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="32dp"
-                    android:text="forget your Password? Recovery it"
+                    android:text="@string/password_recover_txt"
                     android:textAlignment="center"
                     android:textColor="#ffffff"
                     android:textSize="16sp" />
 
                 <Button
-                    android:id="@+id/button3"
+                    android:id="@+id/buttonLogIn"
                     style="@android:style/Widget.Button"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
@@ -128,7 +128,7 @@
                     android:layout_marginTop="24dp"
                     android:layout_marginEnd="32dp"
                     android:background="@drawable/button_background"
-                    android:text="Login"
+                    android:text="@string/login_btn"
                     android:textColor="#ffffff"
                     android:textSize="25sp"
                     android:textStyle="bold" />
