@@ -87,7 +87,7 @@
                     android:layout_marginStart="32dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="32dp"
-                    android:text="@string/user_login_txt"
+                    android:text="@string/password_login_txt"
                     android:textColor="#ffffff"
                     android:textSize="21sp" />
 
@@ -100,8 +100,8 @@
                     android:layout_marginEnd="32dp"
                     android:background="@drawable/edittext_background"
                     android:ems="10"
-                    android:hint="@string/user_login_hint"
-                    android:inputType="textPersonName"
+                    android:hint="@string/password_login_hint"
+                    android:inputType="textPassword"
                     android:paddingStart="24dp"
                     android:textColorHint="#8A8888"
                     android:textSize="19sp" />
@@ -113,7 +113,7 @@
                     android:layout_marginStart="32dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="32dp"
-                    android:text="@string/password_login_txt"
+                    android:text="@string/user_login_txt"
                     android:textColor="#ffffff"
                     android:textSize="21sp" />
 
@@ -126,8 +126,8 @@
                     android:layout_marginEnd="32dp"
                     android:background="@drawable/edittext_background"
                     android:ems="10"
-                    android:hint="@string/password_login_hint"
-                    android:inputType="textPassword"
+                    android:hint="@string/user_login_hint"
+                    android:inputType="textPersonName|text"
                     android:paddingStart="24dp"
                     android:textColorHint="#8A8888"
                     android:textSize="19sp" />

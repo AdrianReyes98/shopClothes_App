@@ -1,6 +1,10 @@
 
 package fisei.reyespc.shopclothes_app.UI;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +16,16 @@ public class LoginActivity extends AppCompatActivity {
 
     Button btnSignIn;
     Button btnSignUp;
+
+    ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(),
+            new ActivityResultCallback<ActivityResult>() {
+                @Override
+                public void onActivityResult(ActivityResult result) {
+
+                }
+            });
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +51,6 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void openActivity(Intent activity){
-        startActivity(activity);
+        activityResultLauncher.launch(activity);
     }
 }

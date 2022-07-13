@@ -11,4 +11,6 @@
     <string name="email_login_txt">Email</string>
     <string name="password_login_txt">Contraseña</string>
     <string name="password_recover_txt">Ollvidaste tu contraseña? Recuperala</string>
+    <string name="register_success_msg">Se registro el usuario con exito</string>
+    <string name="resgister_error_msg">Algo salio mal, revisa tu conexion a internet</string>
 </resources>

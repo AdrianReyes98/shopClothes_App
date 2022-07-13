@@ -10,4 +10,6 @@
     <string name="email_login_txt">Email</string>
     <string name="password_login_txt">Password</string>
     <string name="password_recover_txt">Forget your Password? Recovery it</string>
+    <string name="register_success_msg">User register success</string>
+    <string name="resgister_error_msg">Something went wrong, check your internet conection</string>
 </resources>
