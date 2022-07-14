@@ -2,9 +2,12 @@ package fisei.reyespc.shopclothes_app.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import fisei.reyespc.shopclothes_app.Controllers.UserController;
@@ -23,6 +26,7 @@ public class SignUpActivity extends AppCompatActivity {
     EditText edtEmail;
     EditText edtUserName;
     EditText edtPassword;
+    ProgressBar loading;
 
 
     @Override
@@ -34,14 +38,18 @@ public class SignUpActivity extends AppCompatActivity {
         edtEmail = findViewById(R.id.editTextEmail);
         edtUserName = findViewById(R.id.editTextUser);
         edtPassword = findViewById(R.id.editTextPassword);
+        loading = findViewById(R.id.progressBarSignUp);
+        loading.setVisibility(View.INVISIBLE);
 
         btnSignUp.setOnClickListener(view -> {
+            loading.setVisibility(View.VISIBLE);
+            btnSignUp.setEnabled(false);
             User newUser = new User(
                     edtEmail.getText().toString(),
                     edtUserName.getText().toString(),
                     edtPassword.getText().toString());
+
             createNewUser(newUser);
-            btnSignUp.setEnabled(false);
 
         });
     }
@@ -66,11 +74,13 @@ public class SignUpActivity extends AppCompatActivity {
                     btnSignUp.setEnabled(true);
                     Toast.makeText(SignUpActivity.this,response.body().getResult(),Toast.LENGTH_LONG).show();
                 }
+                loading.setVisibility(View.INVISIBLE);
             }
             @Override
             public void onFailure(Call<ResponseUser> call, Throwable t) {
                 btnSignUp.setEnabled(true);
                 Toast.makeText(SignUpActivity.this,R.string.resgister_error_msg,Toast.LENGTH_LONG).show();
+                loading.setVisibility(View.INVISIBLE);
             }
         });
     }
